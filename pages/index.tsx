@@ -1,8 +1,8 @@
-// pages/index.js
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+// pages/index.tsx
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -29,5 +29,7 @@ export default function Home() {
         Powered by Next.js
       </footer>
     </div>
-  )
-}
+  );
+};
+
+export default Home;
